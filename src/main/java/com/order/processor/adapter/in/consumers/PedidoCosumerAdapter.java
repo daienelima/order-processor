@@ -2,7 +2,7 @@ package com.order.processor.adapter.in.consumers;
 
 import com.order.processor.adapter.in.consumers.mapper.PedidoMessageMapper;
 import com.order.processor.adapter.in.consumers.message.PedidoMensagem;
-import com.order.processor.application.port.ProcessarPedidoInputPort;
+import com.order.processor.application.port.in.ProcessarPedidoInputPort;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;

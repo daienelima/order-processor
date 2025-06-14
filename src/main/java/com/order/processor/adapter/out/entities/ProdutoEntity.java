@@ -25,6 +25,8 @@ public class ProdutoEntity {
 
     private int quantidade;
 
+    private BigDecimal valorTotal;
+
     @ManyToOne
     @JoinColumn(name = "pedido_id")
     private PedidoEntity pedido;

@@ -22,4 +22,5 @@ public interface EntityMapper {
             }
         }
     }
+    Pedido toPedido(PedidoEntity pedidoEntity);
 }

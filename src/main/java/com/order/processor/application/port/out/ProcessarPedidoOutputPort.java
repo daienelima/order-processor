@@ -1,4 +1,4 @@
-package com.order.processor.application.port;
+package com.order.processor.application.port.out;
 
 import com.order.processor.application.core.domain.Pedido;
 
