@@ -5,6 +5,7 @@ import com.order.processor.adapter.out.repositories.PedidoEntityRepository;
 import com.order.processor.application.core.domain.Pedido;
 import com.order.processor.application.port.out.ListarPedidosOutputPort;
 import com.order.processor.application.port.out.ProcessarPedidoOutputPort;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,6 +25,7 @@ public class RepositoryAdapter implements ProcessarPedidoOutputPort, ListarPedid
         return pedidoEntityRepository.existsByCodigoExterno(codigoExterno);
     }
 
+    @Transactional
     @Override
     public void salvarPedido(Pedido pedido) {
         var pedidoEntity = EntityMapper.INSTANCE.toPedidoEntity(pedido);
