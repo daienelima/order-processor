@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class PedidoCosumerAdapter {
 
-    private final ProcessarPedidoInputPort processarPedTidoInputPort;
+    private final ProcessarPedidoInputPort processarPedidoInputPort;
 
     public PedidoCosumerAdapter(ProcessarPedidoInputPort processarPedidoInputPort) {
         this.processarPedidoInputPort = processarPedidoInputPort;
