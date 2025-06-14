@@ -78,7 +78,7 @@ Use o script Python:
 
 ```bash
 cd tools
-python kafka_producer.py
+python producer.py
 ```
 
 > Ele envia uma mensagem simulando um pedido para o tópico Kafka `tp-pedidos-recebidos`.
